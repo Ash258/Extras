@@ -1,7 +1,8 @@
 {
+    "version": "1.8.1.20180910",
+    "description": "Eclipse memory analyzer.",
     "homepage": "https://www.eclipse.org/mat/",
     "license": "EPL-1.0",
-    "version": "1.8.1.20180910",
     "architecture": {
         "64bit": {
             "url": "https://www.eclipse.org/downloads/download.php?r=1&file=/mat/1.8.1/rcp/MemoryAnalyzer-1.8.1.20180910-win32.win32.x86_64.zip",
@@ -22,22 +23,20 @@
     ],
     "checkver": {
         "url": "https://www.eclipse.org/mat/downloads.php",
-        "re": "/mat/(?<short>[\\d.]+)/rcp/MemoryAnalyzer-([\\d.]+)-win32"
+        "regex": "/mat/(?<short>[\\d.]+)/rcp/MemoryAnalyzer-([\\d.]+)-win32"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://www.eclipse.org/downloads/download.php?r=1&file=/mat/$matchShort/rcp/MemoryAnalyzer-$version-win32.win32.x86_64.zip",
                 "hash": {
-                    "url": "https://www.eclipse.org/downloads/sums.php?file=/mat/$matchShort/rcp/MemoryAnalyzer-$version-win32.win32.x86_64.zip&type=sha512",
-                    "find": "([a-fA-F0-9]{128})"
+                    "url": "https://www.eclipse.org/downloads/sums.php?file=/mat/$matchShort/rcp/MemoryAnalyzer-$version-win32.win32.x86_64.zip&type=sha512"
                 }
             },
             "32bit": {
                 "url": "https://www.eclipse.org/downloads/download.php?r=1&file=/mat/$matchShort/rcp/MemoryAnalyzer-$version-win32.win32.x86.zip",
                 "hash": {
-                    "url": "https://www.eclipse.org/downloads/sums.php?file=/mat/$matchShort/rcp/MemoryAnalyzer-$version-win32.win32.x86.zip&type=sha512",
-                    "find": "([a-fA-F0-9]{128})"
+                    "url": "https://www.eclipse.org/downloads/sums.php?file=/mat/$matchShort/rcp/MemoryAnalyzer-$version-win32.win32.x86.zip&type=sha512"
                 }
             }
         }

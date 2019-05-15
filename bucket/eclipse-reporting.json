@@ -1,7 +1,8 @@
 {
+    "version": "2019-03",
+    "description": "Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that also have reporting needs.",
     "homepage": "https://www.eclipse.org",
     "license": "EPL-1.0",
-    "version": "2019-03",
     "architecture": {
         "64bit": {
             "url": "https://www.eclipse.org/downloads/download.php?r=1&file=/technology/epp/downloads/release/2019-03/R/eclipse-reporting-2019-03-R-win32-x86_64.zip",

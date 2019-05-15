@@ -1,7 +1,8 @@
 {
+    "version": "2019-03",
+    "description": "An IDE for C/C++ developers with Mylyn integration.",
     "homepage": "https://www.eclipse.org",
     "license": "EPL-1.0",
-    "version": "2019-03",
     "architecture": {
         "64bit": {
             "url": "https://www.eclipse.org/downloads/download.php?r=1&file=/technology/epp/downloads/release/2019-03/R/eclipse-cpp-2019-03-R-win32-x86_64.zip",
