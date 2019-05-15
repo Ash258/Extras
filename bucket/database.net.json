@@ -17,7 +17,7 @@
     "persist": "Database_Files",
     "checkver": {
         "url": "https://fishcodelib.com/version.xml",
-        "re": "database4.*?ver=\"([\\d.]+)\""
+        "xpath": "/versions/ver[@name='database4']/@ver"
     },
     "autoupdate": {
         "url": "https://fishcodelib.com/files/DatabaseNet4.zip"
