@@ -1,8 +1,8 @@
 {
-    "homepage": "https://godotengine.org/",
-    "description": "A feature-packed, cross-platform game engine to create 2D and 3D games from a unified interface.",
-    "license": "MIT",
     "version": "3.1.1",
+    "description": "A feature-packed, cross-platform game engine to create 2D and 3D games from a unified interface.",
+    "homepage": "https://godotengine.org/",
+    "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://downloads.tuxfamily.org/godotengine/3.1.1/Godot_v3.1.1-stable_win64.exe.zip",
@@ -13,7 +13,7 @@
             "hash": "c9bb759f144bdd85633e7c0992ab93b7944e32152dc7cdbd382f188739e2846a"
         }
     },
-    "pre_install": "Get-ChildItem \"$dir\\Godot_*.exe\" | Rename-Item -NewName \"$dir\\godot.exe\"",
+    "pre_install": "Get-Item \"$dir\\Godot_*.exe\" | Rename-Item -NewName 'godot.exe'",
     "bin": "godot.exe",
     "shortcuts": [
         [
@@ -23,7 +23,7 @@
     ],
     "checkver": {
         "url": "https://godotengine.org/download",
-        "re": "<h2>Godot <em>([\\d.]+)</em></h2>"
+        "regex": "<h2>Godot <em>([\\d.]+)</em></h2>"
     },
     "autoupdate": {
         "architecture": {
